@@ -8,8 +8,8 @@ android {
         minSdkVersion 21
         targetSdkVersion 33
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
-        versionCode 29
-        versionName "1.4.9-ui3"
+        versionCode 30
+        versionName "1.4.9-ui4"
     }
     signingConfigs {
         // 固定开发签名，保证每次 CI 构建可以覆盖安装（同样的 key 才能升级）
