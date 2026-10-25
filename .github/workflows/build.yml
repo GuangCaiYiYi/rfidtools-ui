@@ -5,6 +5,9 @@ on:
     branches: [ master, main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   apk:
     runs-on: ubuntu-latest
@@ -56,3 +59,14 @@ jobs:
           name: rfidtools-ui-apk
           path: out/*.apk
           if-no-files-found: error
+
+      - name: Publish APK to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: build-${{ github.run_number }}
+          prerelease: true
+          files: out/*.apk
+          body: |
+            自动构建，基于 UI 现代化改造版本。
+            安装前请先卸载旧版（包名相同但签名不同）。
