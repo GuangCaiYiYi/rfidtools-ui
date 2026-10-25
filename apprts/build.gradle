@@ -8,8 +8,17 @@ android {
         minSdkVersion 21
         targetSdkVersion 33
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
-        versionCode 26
-        versionName "1.4.8 SDK21 && PM3 CWD"
+        versionCode 27
+        versionName "1.4.9-ui1"
+    }
+    signingConfigs {
+        // 固定开发签名，保证每次 CI 构建可以覆盖安装（同样的 key 才能升级）
+        debug {
+            storeFile file('../keystore/dev.jks')
+            storePassword 'rfidtools'
+            keyAlias 'rfidtools'
+            keyPassword 'rfidtools'
+        }
     }
     buildTypes {
         release {
@@ -18,6 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
         debug {
+            signingConfig signingConfigs.debug
             shrinkResources false
             minifyEnabled false
         }

@@ -1,40 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:paddingStart="16dp"
-    android:paddingTop="8dp"
-    android:paddingEnd="16dp"
-    android:paddingBottom="8dp">
+    android:paddingStart="12dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_radain_border"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
+        android:background="@drawable/ripple_card"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_icon_badge"
+            android:contentDescription="device"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_terminal"
+            android:tint="@color/accent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDevName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:text="USB 串口设备"
+                android:textColor="@color/colorTextNormal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtDevAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.02"
+                android:maxLines="1"
+                android:text="00:00:00:00:00:00"
+                android:textColor="@color/colorTextWeaker"
+                android:textSize="12sp" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/txtDevName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:padding="3dp"
-            android:text="Usb串口设备"
-            android:textColor="@color/colorPrimary"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/txtDevAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:padding="3dp"
-            android:text="00:00:00:00:00:00"
-            android:textColor="@color/colorPrimary" />
+            android:paddingStart="10dp"
+            android:text="›"
+            android:textColor="@color/colorTextWeaker"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

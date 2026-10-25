@@ -3,21 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/bg_app_gradient">
+
+    <View
+        android:id="@+id/navHairline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/bnvDeviceConnectSwitch"
+        android:background="@color/hairline" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnvDeviceConnectSwitch"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:layout_alignParentBottom="true"
-        android:background="?android:selectableItemBackground"
+        android:background="@drawable/bg_nav_glass"
+        app:elevation="0dp"
+        app:itemIconSize="22dp"
         app:itemIconTint="@color/color_state_menu_navi_main"
+        app:itemTextColor="@color/color_state_menu_navi_main"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/activity_device_connect" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vpDeviceConnectPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/bnvDeviceConnectSwitch" />
+        android:layout_height="match_parent"
+        android:layout_above="@id/navHairline" />
 
 </RelativeLayout>

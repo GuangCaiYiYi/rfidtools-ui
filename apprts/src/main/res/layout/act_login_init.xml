@@ -3,12 +3,15 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_white_1000"
+    android:background="@drawable/bg_app_gradient"
+    android:gravity="center"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="logo"
+        android:scaleType="fitCenter"
         android:src="@drawable/rrglogo500" />
 
     <!--TODO 隐藏不需要的布局，为我们需要的界面!-->

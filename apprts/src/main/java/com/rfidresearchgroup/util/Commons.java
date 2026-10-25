@@ -159,6 +159,37 @@ public class Commons {
                 .putString(Properties.k_app_language, language).apply();
     }
 
+    // ==================== 外观 / 深色模式 ====================
+
+    public static final int THEME_FOLLOW_SYSTEM = 0;
+    public static final int THEME_LIGHT = 1;
+    public static final int THEME_DARK = 2;
+
+    private static final String KEY_THEME_MODE = "app_theme_mode";
+
+    public static int getThemeMode() {
+        return getPrivatePreferences().getInt(KEY_THEME_MODE, THEME_FOLLOW_SYSTEM);
+    }
+
+    public static void setThemeMode(int mode) {
+        getPrivatePreferences().edit().putInt(KEY_THEME_MODE, mode).apply();
+    }
+
+    /**
+     * 映射到 AppCompatDelegate 的 night mode 常量。
+     */
+    public static int getNightModeForDelegate() {
+        switch (getThemeMode()) {
+            case THEME_LIGHT:
+                return androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO;
+            case THEME_DARK:
+                return androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES;
+            case THEME_FOLLOW_SYSTEM:
+            default:
+                return androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
+        }
+    }
+
     public static boolean isPM3ResInitialled() {
         File pm3Path = new File(TermuxService.HOME_PATH + File.separator + Paths.PM3_PATH);
         String[] list = pm3Path.list();

@@ -338,4 +338,13 @@
     <string name="title_pm3_home">Proxmark3 外部工作目录</string>
     <string name="tips_pm3_res_err">读取PM3的资源版本失败</string>
 
+    <string name="title_theme">外观</string>
+    <string name="title_dark_mode">深色模式</string>
+    <string name="title_sub_dark_mode">可跟随系统，也可固定浅色或深色。</string>
+    <string name="tips_theme_change">主题：</string>
+    <string name="theme_follow_system">跟随系统</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="device_connect_empty_title">还没有发现设备</string>
+    <string name="device_connect_empty_sub">插好读卡器后，下拉刷新试试。</string>
 </resources>

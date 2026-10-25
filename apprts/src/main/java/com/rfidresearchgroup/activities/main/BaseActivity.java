@@ -48,7 +48,8 @@ public abstract class BaseActivity
         NfcTagListenUtils.addListener(this);
 
         LanguageUtil.setAppLanguage(this, Commons.getLanguage());
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        // 主题：跟随系统 / 固定浅色 / 固定深色（用户可在设置里切换）
+        AppCompatDelegate.setDefaultNightMode(Commons.getNightModeForDelegate());
     }
 
     @Override

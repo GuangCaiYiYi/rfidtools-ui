@@ -11,6 +11,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -73,6 +74,33 @@ public class MainSettingsFragment
     }
 
     private void initList() {
+        items.add(new TitleBean(getString(R.string.title_theme)));
+
+        ItemTextBean themeItem = new ItemTextBean(getString(R.string.title_dark_mode)) {
+            @Override
+            public void onClick(View view, int pos) {
+                final String[] modes = new String[]{
+                        getString(R.string.theme_follow_system),
+                        getString(R.string.theme_light),
+                        getString(R.string.theme_dark)
+                };
+                new AlertDialog.Builder(view.getContext())
+                        .setTitle(R.string.tips_theme_change)
+                        .setSingleChoiceItems(modes, Commons.getThemeMode(), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Commons.setThemeMode(which);
+                                dialog.dismiss();
+                                // 切换后 AppCompat 会自动重建界面；模式没变则无需刷新
+                                AppCompatDelegate.setDefaultNightMode(Commons.getNightModeForDelegate());
+                            }
+                        }).show();
+            }
+        };
+        themeItem.setSubTitle(getString(R.string.title_sub_dark_mode));
+        themeItem.setMessage(themeModeLabel());
+        items.add(themeItem);
+
         items.add(new TitleBean(getString(R.string.language)));
 
         ItemTextBean languageItem = new ItemTextBean(getString(R.string.title_app_language)) {
@@ -183,6 +211,18 @@ public class MainSettingsFragment
         multiTypeAdapter.notifyDataSetChanged();
     }
 
+
+    private String themeModeLabel() {
+        switch (Commons.getThemeMode()) {
+            case Commons.THEME_LIGHT:
+                return getString(R.string.theme_light);
+            case Commons.THEME_DARK:
+                return getString(R.string.theme_dark);
+            case Commons.THEME_FOLLOW_SYSTEM:
+            default:
+                return getString(R.string.theme_follow_system);
+        }
+    }
 
     private String languageTran() {
         String currentLanguage = Commons.getLanguage();
