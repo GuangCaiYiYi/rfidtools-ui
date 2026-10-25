@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 语义色板（浅色） ============ -->
+    <color name="bg_top">#F7F9FB</color>
+    <color name="bg_bottom">#E8EDF3</color>
+    <color name="glow">#1A0E7C6B</color>
+    <color name="card_bg">#E8FFFFFF</color>
+    <color name="card_bg_strong">#F5FFFFFF</color>
+    <color name="card_stroke">#140B1522</color>
+    <color name="nav_bg">#F2FFFFFF</color>
+    <color name="nav_solid">#F7F9FB</color>
+    <color name="hairline">#140B1522</color>
+    <color name="accent">#0E7C6B</color>
+    <color name="accent_soft">#1A0E7C6B</color>
+    <color name="ripple">#240E7C6B</color>
+    <color name="text_primary">#111820</color>
+    <color name="text_secondary">#5B6673</color>
+
+    <!-- ============ 兼容旧引用 ============ -->
+    <color name="colorPrimary">@color/bg_top</color>
+    <color name="colorPrimaryDark">@color/bg_top</color>
+    <color name="colorAccent">@color/accent</color>
+    <color name="colorBackground">@color/bg_bottom</color>
+    <color name="colorTextNormal">@color/text_primary</color>
+    <color name="colorTextWeaker">@color/text_secondary</color>
+
+    <!--reds-->
+    <color name="md_red_A700">#C62828</color>
+
+    <!--blue-->
+    <color name="md_blue_600">#3D7EA6</color>
+    <color name="md_blue_700">#34688A</color>
+    <color name="md_blue_800">#2B566F</color>
+
+    <!-- green -->
+    <color name="md_green_600">#2F7A5E</color>
+
+    <!--orange-->
+    <color name="md_orange_600">#B4741F</color>
+
+    <!--grey-->
+    <color name="md_grey_50">#FAFBFC</color>
+    <color name="md_grey_100">#F3F5F8</color>
+    <color name="md_grey_200">#E9EDF2</color>
+    <color name="md_grey_300">#DCE2E9</color>
+    <color name="md_grey_600">#6B7684</color>
+    <color name="md_grey_700">#58626F</color>
+    <color name="md_grey_800">#111820</color>
+    <color name="md_grey_900">#0B1117</color>
+    <color name="md_white_1000">#FFFFFF</color>
+
+    <!--blue grey-->
+    <color name="md_blue_grey_900">#1B242E</color>
+
+</resources>

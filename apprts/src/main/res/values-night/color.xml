@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 语义色板（深色） ============ -->
+    <color name="bg_top">#0C1116</color>
+    <color name="bg_bottom">#141C25</color>
+    <color name="glow">#2422C7A8</color>
+    <color name="card_bg">#14FFFFFF</color>
+    <color name="card_bg_strong">#1FFFFFFF</color>
+    <color name="card_stroke">#1FFFFFFF</color>
+    <color name="nav_bg">#E60C1116</color>
+    <color name="nav_solid">#0C1116</color>
+    <color name="hairline">#1FFFFFFF</color>
+    <color name="accent">#45D6BC</color>
+    <color name="accent_soft">#2645D6BC</color>
+    <color name="ripple">#3345D6BC</color>
+    <color name="text_primary">#E9EFF5</color>
+    <color name="text_secondary">#96A3B1</color>
+
+    <!-- ============ 兼容旧引用 ============ -->
+    <color name="colorPrimary">@color/bg_top</color>
+    <color name="colorPrimaryDark">@color/bg_top</color>
+    <color name="colorAccent">@color/accent</color>
+    <color name="colorBackground">@color/bg_top</color>
+    <color name="colorTextNormal">@color/text_primary</color>
+    <color name="colorTextWeaker">@color/text_secondary</color>
+
+    <color name="md_red_A700">#FF6B6B</color>
+    <color name="md_blue_600">#6FB3D9</color>
+    <color name="md_blue_700">#89C4E6</color>
+    <color name="md_blue_800">#A5D3EC</color>
+    <color name="md_green_600">#5FC79B</color>
+    <color name="md_orange_600">#E0A54A</color>
+
+    <color name="md_grey_50">#0C1116</color>
+    <color name="md_grey_100">#111821</color>
+    <color name="md_grey_200">#161E28</color>
+    <color name="md_grey_300">#222B36</color>
+    <color name="md_grey_600">#96A3B1</color>
+    <color name="md_grey_700">#B3BEC9</color>
+    <color name="md_grey_800">#E9EFF5</color>
+    <color name="md_grey_900">#F5F9FC</color>
+    <color name="md_white_1000">#121922</color>
+
+    <color name="md_blue_grey_900">#E9EFF5</color>
+
+</resources>

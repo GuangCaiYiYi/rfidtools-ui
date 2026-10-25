@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 底色：上浅下深的柔和渐变 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/bg_bottom"
+                android:startColor="@color/bg_top"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- 顶部一层极淡的强调色光晕，制造"玻璃后面有光"的层次 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="#00000000"
+                android:gradientRadius="420dp"
+                android:startColor="@color/glow"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>
