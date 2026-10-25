@@ -38,6 +38,6 @@
         android:background="@drawable/btn_selector_blue"
         android:text="@string/agree"
         android:textAllCaps="false"
-        android:textColor="@color/md_white_1000" />
+        android:textColor="@color/text_on_accent" />
 
 </RelativeLayout>

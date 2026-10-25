@@ -288,7 +288,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_selector_blue"
                     android:text="@string/cancel"
-                    android:textColor="@color/md_white_1000" />
+                    android:textColor="@color/text_on_accent" />
 
                 <Button
                     android:id="@+id/btnWriteTag"
@@ -297,7 +297,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_selector_blue"
                     android:text="@string/writetag"
-                    android:textColor="@color/md_white_1000" />
+                    android:textColor="@color/text_on_accent" />
 
                 <Button
                     android:id="@+id/btnReadTag"
@@ -307,7 +307,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_selector_blue"
                     android:text="@string/readtag"
-                    android:textColor="@color/md_white_1000" />
+                    android:textColor="@color/text_on_accent" />
 
             </LinearLayout>
 

@@ -49,7 +49,7 @@
             android:background="@drawable/btn_selector_blue"
             android:text="@string/aliases"
             android:textAllCaps="false"
-            android:textColor="@color/md_white_1000" />
+            android:textColor="@color/text_on_accent" />
 
     </LinearLayout>
 
@@ -216,7 +216,7 @@
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/btn_selector_blue"
                     android:text="@string/open"
-                    android:textColor="@color/md_white_1000" />
+                    android:textColor="@color/text_on_accent" />
 
             </LinearLayout>
 
@@ -262,7 +262,7 @@
                 android:layout_marginStart="16dp"
                 android:background="@drawable/btn_selector_blue"
                 android:text="@string/flash"
-                android:textColor="@color/md_white_1000" />
+                android:textColor="@color/text_on_accent" />
 
         </LinearLayout>
 
@@ -289,7 +289,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_information_download"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -302,7 +302,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_version_info"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -315,7 +315,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_dev_reset"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
 
@@ -329,7 +329,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_decrypt_all"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -342,7 +342,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_decrypt_one"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -355,7 +355,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_decrypt_history"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -368,7 +368,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_tag_data_download"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -381,7 +381,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_data_upload"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
             <Button
@@ -394,7 +394,7 @@
                 android:paddingTop="38dp"
                 android:paddingBottom="6dp"
                 android:text="@string/title_data_clear"
-                android:textColor="@color/md_white_1000"
+                android:textColor="@color/text_on_accent"
                 app:layout_columnWeight="1" />
 
         </androidx.gridlayout.widget.GridLayout>

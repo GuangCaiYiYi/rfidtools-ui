@@ -17,11 +17,11 @@
 
     <style name="toolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <!--菜单文本的颜色-->
-        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textColor">@color/colorTextNormal</item>
         <!--背景颜色-->
         <item name="android:colorBackground">?attr/colorPrimary</item>
         <!--appbar文本的颜色-->
-        <item name="android:textColorPrimary">@color/md_white_1000</item>
+        <item name="android:textColorPrimary">@color/colorTextNormal</item>
     </style>
 
     <style name="popMenuStyle" parent="@style/ThemeOverlay.AppCompat">

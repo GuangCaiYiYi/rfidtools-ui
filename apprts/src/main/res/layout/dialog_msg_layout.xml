@@ -25,7 +25,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_selector_blue"
             android:text="@string/send"
-            android:textColor="@color/md_white_1000" />
+            android:textColor="@color/text_on_accent" />
 
     </LinearLayout>
 
@@ -38,7 +38,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/console"
-        android:textColor="@color/md_white_1000" />
+        android:textColor="@color/text_on_accent" />
 
     <TextView
         android:id="@+id/txtDialogShowMsg"

@@ -155,7 +155,7 @@
                         android:background="@drawable/btn_selector_blue"
                         android:text="@string/title_select_bootrom"
                         android:textAllCaps="false"
-                        android:textColor="@color/md_white_1000" />
+                        android:textColor="@color/text_on_accent" />
 
                 </LinearLayout>
 
@@ -183,7 +183,7 @@
                         android:background="@drawable/btn_selector_blue"
                         android:text="@string/select_fullimage"
                         android:textAllCaps="false"
-                        android:textColor="@color/md_white_1000" />
+                        android:textColor="@color/text_on_accent" />
 
                 </LinearLayout>
 
@@ -203,6 +203,6 @@
         android:background="@drawable/btn_selector_blue"
         android:text="@string/flash"
         android:textAllCaps="false"
-        android:textColor="@color/md_white_1000" />
+        android:textColor="@color/text_on_accent" />
 
 </RelativeLayout>

@@ -347,4 +347,7 @@
     <string name="theme_dark">深色</string>
     <string name="device_connect_empty_title">还没有发现设备</string>
     <string name="device_connect_empty_sub">插好读卡器后，下拉刷新试试。</string>
+    <string name="title_debug">调试</string>
+    <string name="title_crash_log">崩溃日志</string>
+    <string name="title_sub_crash_log">闪退时把堆栈写入 Download/RFIDtools/crash.log（超过 2 MB 自动重写）。</string>
 </resources>

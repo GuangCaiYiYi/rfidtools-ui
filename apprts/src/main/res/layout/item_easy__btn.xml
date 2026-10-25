@@ -23,7 +23,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:text="name"
-            android:textColor="@color/md_white_1000" />
+            android:textColor="@color/text_on_accent" />
 
         <!--需要显示大概的命令，也就是命令本身!-->
         <TextView
@@ -34,7 +34,7 @@
             android:maxLines="1"
             android:paddingBottom="2dp"
             android:text="cmd"
-            android:textColor="@color/md_white_1000"
+            android:textColor="@color/text_on_accent"
             android:textSize="12sp" />
 
     </LinearLayout>

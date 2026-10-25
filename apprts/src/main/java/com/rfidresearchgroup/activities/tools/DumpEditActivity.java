@@ -155,7 +155,7 @@ public class DumpEditActivity extends BaseActivity implements DumpEditotView {
         if (dataList.size() <= 0) {
             TextView _msg = new TextView(this);
             _msg.setText(getString(R.string.data_fragmentary));
-            _msg.setTextColor(ContextUtil.getColor(R.color.md_white_1000));
+            _msg.setTextColor(ContextUtil.getColor(R.color.colorTextNormal));
             dataWaper.addView(_msg);
             LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) _msg.getLayoutParams();
             lp.setMarginStart(16);

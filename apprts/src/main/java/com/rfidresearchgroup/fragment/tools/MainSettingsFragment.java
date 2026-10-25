@@ -194,6 +194,18 @@ public class MainSettingsFragment
         pm3HomePathItem.setChecked(Commons.isPM3ExternalWorkDirectoryEnable());
         items.add(pm3HomePathItem);
 
+        items.add(new TitleBean(getString(R.string.title_debug)));
+
+        ItemToggleBean crashLogItem = new ItemToggleBean(getString(R.string.title_crash_log)) {
+            @Override
+            public void onChange(View view, int pos, boolean checked) {
+                Commons.setCrashLogEnabled(checked);
+            }
+        };
+        crashLogItem.setSubTitle(getString(R.string.title_sub_crash_log));
+        crashLogItem.setChecked(Commons.isCrashLogEnabled());
+        items.add(crashLogItem);
+
         items.add(new TitleBean(getString(R.string.other)));
 
         ItemTextBean openSourceItem = new ItemTextBean(getString(R.string.title_open_source)) {

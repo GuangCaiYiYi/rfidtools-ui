@@ -14,6 +14,7 @@
     <color name="accent">#45D6BC</color>
     <color name="accent_soft">#2645D6BC</color>
     <color name="ripple">#3345D6BC</color>
+    <color name="text_on_accent">#FFFFFF</color>
     <color name="text_primary">#E9EFF5</color>
     <color name="text_secondary">#96A3B1</color>
 

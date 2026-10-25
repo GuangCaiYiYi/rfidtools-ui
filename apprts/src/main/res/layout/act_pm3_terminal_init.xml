@@ -122,7 +122,7 @@
                 android:padding="8dp"
                 android:text="@string/go2"
                 android:textAllCaps="false"
-                android:textColor="@color/md_white_1000" />
+                android:textColor="@color/text_on_accent" />
 
             <CheckBox
                 android:id="@+id/ckBoxAutoGoTermux"

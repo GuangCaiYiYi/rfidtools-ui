@@ -35,7 +35,7 @@
             android:layout_marginEnd="10dp"
             android:background="@drawable/shape_bg_blue_600"
             android:text="@string/Load"
-            android:textColor="@color/md_white_1000" />
+            android:textColor="@color/text_on_accent" />
 
         <Button
             android:id="@+id/btnSaveUnionKey"
@@ -45,7 +45,7 @@
             android:layout_toStartOf="@id/btnLoadUnionKey"
             android:background="@drawable/shape_bg_blue_600"
             android:text="@string/save"
-            android:textColor="@color/md_white_1000" />
+            android:textColor="@color/text_on_accent" />
 
     </RelativeLayout>
 

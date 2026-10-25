@@ -340,4 +340,7 @@
     <string name="theme_dark">Dark</string>
     <string name="device_connect_empty_title">No device found yet</string>
     <string name="device_connect_empty_sub">Plug in your reader, then pull down to refresh.</string>
+    <string name="title_debug">Debug</string>
+    <string name="title_crash_log">Crash log</string>
+    <string name="title_sub_crash_log">Write stack traces to Download/RFIDtools/crash.log (auto-rotates at 2 MB).</string>
 </resources>

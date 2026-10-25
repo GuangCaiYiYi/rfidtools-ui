@@ -175,6 +175,19 @@ public class Commons {
         getPrivatePreferences().edit().putInt(KEY_THEME_MODE, mode).apply();
     }
 
+    // ==================== 崩溃日志开关 ====================
+    // 与 libutils 的 CrashUtil 共用同一个 key，默认关闭。
+
+    public static final String KEY_CRASH_LOG = "crash_log_enabled";
+
+    public static boolean isCrashLogEnabled() {
+        return getPrivatePreferences().getBoolean(KEY_CRASH_LOG, false);
+    }
+
+    public static void setCrashLogEnabled(boolean enabled) {
+        getPrivatePreferences().edit().putBoolean(KEY_CRASH_LOG, enabled).apply();
+    }
+
     /**
      * 映射到 AppCompatDelegate 的 night mode 常量。
      */
