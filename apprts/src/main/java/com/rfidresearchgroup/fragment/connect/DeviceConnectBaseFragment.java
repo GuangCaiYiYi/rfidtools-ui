@@ -45,7 +45,7 @@ public abstract class DeviceConnectBaseFragment
     //下拉刷新控件!
     protected SwipeRefreshLayout srDiscovery;
     //无数据时的内容填充!
-    protected RelativeLayout layout_404_device;
+    protected View layout_404_device;
     //连接过程提示框
     protected AlertDialog dialogConnectTips = null;
     //是否是自带NFC的标志位!
